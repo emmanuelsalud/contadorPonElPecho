@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sdcontador:
+    container_name: sdcontador
+    build:
+      dockerfile: Dockerfile
+      context: .
+    restart: always
+    ports:
+      - "5249:3000"
